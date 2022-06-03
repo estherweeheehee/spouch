@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+/* font-family: 'Dancing Script', cursive; */
+
+.spouch {
+  font-family: 'Lobster', cursive;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.opening {
+  font-size: 30px;
+  font-weight: bold;
+  color:#2A3027
+}
+
+.spouchopening {
+  font-family: 'Lobster', cursive;
+  font-size: 120px;
+  /* background-color:#462f15; */
+  color:#808B7B;
+  width:max-content;
+  margin: auto;
+  /* padding: 40px; */
+  /* border-radius: 4%; */
+  text-shadow: 5px 5px #636a5f;
+  border-bottom: 30px solid #2A3027;
+  /* padding-top: 30px; */
+  box-sizing: border-box;
+}
+
+nav {
+  /* background: rgb(179, 156, 112); */
+  /* background-color: #6B8484; */
+  background-color: #869083;
+  color: white;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  flex-direction: row;
+  padding: 0 20px;
+}
+
+nav img {
+  max-height: 50px;
+  padding: 5px;
+  /* margin: 5px 20px 5px 0; */
+  display: inline-block;
+  vertical-align: middle;
+}
+
+nav h1 {
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+nav a {
+  color: white;
+  display: inline-block;
+  padding: 10px;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background: #EEE4DF;
+  color: #6B8484;
+  
+}
+
+.nav-right {
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+.section{
+  margin-bottom: 100px;
+}
+
+.title {
+  text-align :center;
+  margin-top: 80px;
+}
+
+.header {
+  text-align :center;
+}
+
+.abouthead {
+  text-align :center;
+  
+}
+
+.about {
+  text-align: center;
+  margin: auto;
+  width: max-content;
+}
+
+.aboutheader {
+  text-align: left;
+}
+
+.aboutdiv {
+  background-color: rgb(246, 244, 241);
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  padding: 30px;
+  text-align: left;
+  margin: 30px;
+  border-radius: 10px;
+}
+
+.search {
+  margin-top: 50px;
+}
+
+form {
+  width:max-content;
+  margin: auto;
+}
+
+fieldset {
+  outline: none;
+  border: none;
+}
+
+.inputbox {
+  font-size: 18px;
+}
+
+
+.container {
+  display: flex;
+  
+  height: max-content;
+  
+}
+
+button {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  border: none;
+  padding: 3px 6px 3px 6px;
+  background-color: #6B8484;
+  color:azure;
+}
+
+.resultbox {
+  width:70%;
+  padding: 20px;
+  margin: 20px auto;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  background-color: rgb(246, 244, 241);
+  border-radius: 10px;
+}
+
+.addbutton {
+  text-align: right;
+  color: #4ebb1c;
+}
+
+.addbutton:hover {
+  text-align: right;
+  color: #4ebb1c;
+}
+
+.notaddedbutton {
+  text-align: right;
+  color:#2A3027
+}
+
+.notaddedbutton:hover {
+  color: #4ebb1c;
+}
+
+.leftcolumn {
+  
+  width: 30%;
+}
+
+.rightcolumn {
+  
+  width: 70%
+}
+
+.pouchbox {
+  color:azure;
+  background-color: #6B8484;
+  font-size: 15px;
+  margin: 20px;
+  padding: 10px 15px 5px 15px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.removebutton:hover {
+  color:rgb(120, 33, 33);
+}
+
+.pouchSym {
+  font-weight:bolder;
+  font-size: 25px;
+}
+
+.detailbox {
+  
+  margin: 20px;
+  padding: 15px;
+  background-color: rgb(246, 244, 241);
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  border-radius: 10px;
+}
+
+.date {
+  font-size:small;
+  margin-top: -20px;
+}
+
+.launch {
+  text-align: right;
+}
+
+.launch:hover {
+  color:#2a5516;
+}
+
+.pouchdetailcontainer {
+  display: flex;
+  flex-wrap: wrap
+}
+
+.rightdetailcontainer {
+  margin-left: 50px;
+}
+
+.memobox {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.memoheader {
+  text-align: center;
+}
+
+.memo {
+  
+  display: flex;
+  align-items: center;
+  background-color: black;
+  color:rgb(246, 244, 241);
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #2A3027;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.memonote {
+  padding: 20px;
+  background-color: #2A3027;
+  color: rgb(246, 244, 241);
+  border-radius: 10px;
+  word-wrap: break-word
+}
+
+.memocontrols {
+  background-color: #2A3027;
+  padding: 5px;
+}
+
+.controls{
+  color:#d64d48;
+}
+
+.controls:active {
+  color:rgb(246, 244, 241);
+}
+
+.controls:hover {
+  color:rgb(130, 193, 21);
+}
+
+.done {
+  color: rgb(130, 193, 21);
+}
+
+.done:hover {
+  color:#d64d48
+}
+
+.done:active {
+  color:rgb(246, 244, 241);
+}
+
+.delete:hover {
+  color:#6B8484;
+}
+
+.footer {
+  padding: 10px 10px 10px 20px;
+  background: #EEE4DF;
+  color: lightslategray;
+  position: fixed;
+  bottom: 0;
+  
+  margin-top: 10px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  display: flex;
+  width: 100%;
+  font-size: smaller;
+  
+}
+
+
+
+/* .bold {
+
+} */
+
+.footerright {
+  align-self: flex-end;
+  margin-left: auto;
+  padding-right: 40px;
+}
+
+.contactlink {
+  margin-top: 5px;
+  margin-left:10px;
+}
+
+#graph {
+  width: 600px;
+  height: 400px;
+} 
