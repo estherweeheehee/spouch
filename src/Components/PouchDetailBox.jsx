@@ -6,7 +6,6 @@ import DrawGraph from "./DrawGraph";
 const API_KEY = import.meta.env.VITE_API_KEY;
 const API_KEY2 = import.meta.env.VITE_API_KEY2;
 
-
 const PouchDetailBox = () => {
   const params = useParams();
   console.log(params.id);
@@ -34,7 +33,7 @@ const PouchDetailBox = () => {
     fiftytwoweeklow: "",
     fiftydaymovingaverage: "",
     twohundreddaymovingaverage: "",
-    timeseriesdaily : {}
+    timeseriesdaily: {},
   });
 
   const fetchDetails = async () => {
@@ -72,17 +71,12 @@ const PouchDetailBox = () => {
       fiftytwoweeklow: data["52WeekLow"],
       fiftydaymovingaverage: data["50DayMovingAverage"],
       twohundreddaymovingaverage: data["200DayMovingAverage"],
-      timeseriesdaily: price["Time Series (Daily)"]
+      timeseriesdaily: price["Time Series (Daily)"],
     });
   };
 
   useEffect(() => {
-    // try {
-    //     fetchDetails()
-    // } catch (error) {
-    //     setStatus("error")
-    // }
-    fetchDetails()
+    //fetchDetails()
   }, [params.id]);
 
   const handleChange = (event) => {
@@ -109,14 +103,6 @@ const PouchDetailBox = () => {
     const newArr = notebook.filter((item, index) => i !== index);
     setNotebook(newArr);
   };
-
-  // if (status === "error") {
-  //     return (
-  //         <div className="detailbox">
-  //             <h3>data not found</h3>
-  //         </div>
-  //     )
-  // }
 
   return (
     <div className="detailbox">
@@ -195,7 +181,6 @@ const PouchDetailBox = () => {
         <DrawGraph timeseriesdaily={overview.timeseriesdaily} />
       </div>
 
-
       <h2 className="memoheader">Memos:</h2>
 
       <form onSubmit={handleSubmit}>
@@ -218,7 +203,6 @@ const PouchDetailBox = () => {
             <option value="priority">Priority</option>
             
           </select> */}
-        
 
           <button>Submit</button>
         </fieldset>
