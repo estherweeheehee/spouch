@@ -22,6 +22,9 @@ ChartJS.register(
 );
 
 const DrawGraph = ({ timeseriesdaily }) => {
+  if (timeseriesdaily === undefined) {
+    return false
+  }
   const options = {
     responsive: true,
     plugins: {
