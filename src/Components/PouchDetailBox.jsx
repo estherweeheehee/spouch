@@ -82,7 +82,7 @@ const PouchDetailBox = () => {
     // } catch (error) {
     //     setStatus("error")
     // }
-    //fetchDetails()
+    fetchDetails()
   }, [params.id]);
 
   const handleChange = (event) => {

@@ -156,10 +156,10 @@ button {
 
 .addbutton {
   text-align: right;
-  color: #4ebb1c;
+  /* color: #4ebb1c; */
 }
 
-.addbutton:hover {
+/* .addbutton:hover {
   text-align: right;
   color: #4ebb1c;
 }
@@ -171,7 +171,7 @@ button {
 
 .notaddedbutton:hover {
   color: #4ebb1c;
-}
+} */
 
 .leftcolumn {
   

@@ -15,7 +15,7 @@ const ResultBox = ({name, symbol, type, region, handleInfo, removeInfo}) => {
     
     return (
         <div className="resultbox" key={symbol}>
-            <div className={add === true ? "addbutton" : "notaddedbutton"}><AddCircleOutlineIcon onClick={handleClick}/></div>
+            <div className={"addbutton"} style={{color: add === true? "#4ebb1c" : " black"}}><AddCircleOutlineIcon onClick={handleClick}/></div>
             <h3>{name}</h3>
             <p>Symbol: {symbol}</p>
             <p>Type: {type}</p>

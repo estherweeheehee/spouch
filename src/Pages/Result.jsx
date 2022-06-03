@@ -23,7 +23,7 @@ const Result = ({handleInfo, removeInfo}) => {
       }
 
       useEffect(() => {
-        //fetchData()
+        fetchData()
       }, [params.stock])
 
     
