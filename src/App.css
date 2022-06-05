@@ -156,7 +156,12 @@ button {
 
 .addbutton {
   text-align: right;
-  /* color: #4ebb1c; */
+  color: #4ebb1c;
+}
+
+.notadded {
+  text-align:right;
+  color: black;
 }
 
 /* .addbutton:hover {

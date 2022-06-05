@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import Memo from "./Memo";
 import DrawGraph from "./DrawGraph";
 
-const API_KEY = import.meta.env.VITE_API_KEY;
+const API_KEY = import.meta.env.VITE_API_KEY3;
 const API_KEY2 = import.meta.env.VITE_API_KEY2;
 
 
