@@ -48,10 +48,10 @@ function App() {
     setInfo(updatedInfo)
   }
 
-  const removeAdd = (sym) => {
-    const updated = info.filter((entry, index) => entry.sym !== sym)
-    setInfo(updated)
-  }
+  // const removeAdd = (sym) => {
+  //   const updated = info.filter((entry, index) => entry.sym !== sym)
+  //   setInfo(updated)
+  // }
 
   // const fetchData = async () => {
   //   const response = await fetch(`http://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=IBM&apikey=${API_KEY}`)
