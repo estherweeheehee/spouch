@@ -21,7 +21,7 @@ const ResultBox = ({name, symbol, type, region, handleInfo, removeInfo}) => {
             <p>Type: {type}</p>
             <p>Country: {region}</p>
             
-            {/* <button onClick={handleClick}>Add to pouch</button> */}
+            
             
         </div>
     )
