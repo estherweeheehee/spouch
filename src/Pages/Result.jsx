@@ -4,6 +4,7 @@ import ResultBox from "../Components/ResultBox";
 import bestmatch from "../Data/bestmatch";
 
 const API_KEY = import.meta.env.VITE_API_KEY
+const temp_key = VKHXG7BORENVVIMY
 
 const Result = ({handleInfo, removeInfo}) => {
   const params = useParams();
@@ -16,14 +17,14 @@ const Result = ({handleInfo, removeInfo}) => {
     // use params.stock to do fetch
     const fetchData = async () => {
         // const response = await fetch(`http://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=IBM&apikey=${API_KEY}`)
-        const response = await fetch(`http://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords=${params.stock}&apikey=${API_KEY}`)
+        const response = await fetch(`http://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords=${params.stock}&apikey=${temp_key}`)
         const data = await response.json()
         console.log(data)
         setResult(data)
       }
 
       useEffect(() => {
-        fetchData()
+        //fetchData()
       }, [params.stock])
 
     

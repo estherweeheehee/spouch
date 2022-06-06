@@ -15,14 +15,14 @@ const PouchResultBox = ({symbol, name, obtainDetail, removeInfo, index}) => {
 
     return (
         <div className="pouchbox">
-            <div className="removebutton">
-            <RemoveCircleOutlineIcon onClick={handleRemove}/>
+            <div className="removebutton" onClick={handleRemove}>
+            <RemoveCircleOutlineIcon/>
             </div>
             
             
             <p className="pouchSym">{symbol}</p>
             <p>{name}</p>
-            <div className="launch"><LaunchIcon onClick={handleClick}/></div>
+            <div className="launch" onClick={handleClick}><LaunchIcon/></div>
         </div>
     )
 }

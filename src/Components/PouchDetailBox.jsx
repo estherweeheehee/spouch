@@ -3,8 +3,10 @@ import { useParams } from "react-router-dom";
 import Memo from "./Memo";
 import DrawGraph from "./DrawGraph";
 
-const API_KEY = import.meta.env.VITE_API_KEY3;
+const API_KEY3 = import.meta.env.VITE_API_KEY3;
+const temp_key2 =  LIUUU8OXO9PYVS9N
 const API_KEY2 = import.meta.env.VITE_API_KEY2;
+const temp_key3 = TOZD7055DIPTVG4C
 
 
 const PouchDetailBox = () => {
@@ -39,12 +41,12 @@ const PouchDetailBox = () => {
 
   const fetchDetails = async () => {
     const response = await fetch(
-      `http://www.alphavantage.co/query?function=OVERVIEW&symbol=${params.id}&apikey=${API_KEY}`
+      `http://www.alphavantage.co/query?function=OVERVIEW&symbol=${params.id}&apikey=${temp_key2}`
     );
     const data = await response.json();
 
     const response2 = await fetch(
-      `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=${params.id}&apikey=${API_KEY2}`
+      `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=${params.id}&apikey=${temp_key3}`
     );
     const price = await response2.json();
 
@@ -77,7 +79,7 @@ const PouchDetailBox = () => {
   };
 
   useEffect(() => {
-    fetchDetails()
+    //fetchDetails()
   }, [params.id]);
 
   const handleChange = (event) => {
