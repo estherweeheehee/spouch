@@ -79,7 +79,7 @@ const PouchDetailBox = () => {
   };
 
   useEffect(() => {
-    //fetchDetails()
+    fetchDetails()
   }, [params.id]);
 
   const handleChange = (event) => {
