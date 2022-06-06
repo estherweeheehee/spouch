@@ -41,7 +41,7 @@ const PouchDetailBox = () => {
 
   const fetchDetails = async () => {
     const response = await fetch(
-      `http://www.alphavantage.co/query?function=OVERVIEW&symbol=${params.id}&apikey=${API_KEY3}`
+      `https://www.alphavantage.co/query?function=OVERVIEW&symbol=${params.id}&apikey=${API_KEY3}`
     );
     const data = await response.json();
 
@@ -106,7 +106,6 @@ const PouchDetailBox = () => {
     const newArr = notebook.filter((item, index) => i !== index);
     setNotebook(newArr);
   };
-
 
 
   return (

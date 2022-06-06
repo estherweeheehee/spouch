@@ -14,12 +14,7 @@ import PouchDetailBox from './Components/PouchDetailBox'
 import About from './Pages/About'
 import Contact from './Pages/Contact'
 
-
 const API_KEY = import.meta.env.VITE_API_KEY
-
-// localStorage.debug= "simon:*"
-// const log = debug("simon:app")
-// log("testing")
 
 function App() {
   const [info, setInfo] = useState([])
@@ -27,8 +22,6 @@ function App() {
 
   const obtainDetail = (sym) => {
     setDetail(sym)
-    
-    
 }
 
   const handleInfo = (sym, name) => {
@@ -42,21 +35,10 @@ function App() {
     }
     }
     
-
   const removeInfo = (i) => {
     const updatedInfo = info.filter((entry, index) => i !== index)
     setInfo(updatedInfo)
   }
-
-  // const removeAdd = (sym) => {
-  //   const updated = info.filter((entry, index) => entry.sym !== sym)
-  //   setInfo(updated)
-  // }
-
-  // const fetchData = async () => {
-  //   const response = await fetch(`http://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=IBM&apikey=${API_KEY}`)
-  //   const data = await response.json()
-  // }
 
   return (
     <div className="App">

@@ -17,21 +17,15 @@
 .spouchopening {
   font-family: 'Lobster', cursive;
   font-size: 120px;
-  /* background-color:#462f15; */
   color:#808B7B;
   width:max-content;
   margin: auto;
-  /* padding: 40px; */
-  /* border-radius: 4%; */
   text-shadow: 5px 5px #636a5f;
   border-bottom: 30px solid #2A3027;
-  /* padding-top: 30px; */
   box-sizing: border-box;
 }
 
 nav {
-  /* background: rgb(179, 156, 112); */
-  /* background-color: #6B8484; */
   background-color: #869083;
   color: white;
   display: flex;
@@ -163,20 +157,6 @@ button {
   text-align:right;
   color: black;
 }
-
-/* .addbutton:hover {
-  text-align: right;
-  color: #4ebb1c;
-}
-
-.notaddedbutton {
-  text-align: right;
-  color:#2A3027
-}
-
-.notaddedbutton:hover {
-  color: #4ebb1c;
-} */
 
 .leftcolumn {
   

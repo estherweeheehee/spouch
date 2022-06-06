@@ -29,7 +29,6 @@ const Pouch = ({info, obtainDetail, removeInfo}) => {
                 <MakePouch />
             </div>
             <div className="rightcolumn">
-                {/* <PouchDetailBox detail={detail} /> */}
                 <Outlet/>
             </div>
             </div>

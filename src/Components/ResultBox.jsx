@@ -5,12 +5,9 @@ import { useState } from 'react';
 const ResultBox = ({name, symbol, type, region, handleInfo, removeInfo}) => {
     const [add, setAdd] = useState(false)
 
-    const handleClick = () => {
-        
+    const handleClick = () => {  
             setAdd(true)
-            handleInfo(symbol, name)
-        
-        
+            handleInfo(symbol, name)    
     }
     
     return (
